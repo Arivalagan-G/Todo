@@ -8,7 +8,7 @@ const Step1PersonalInfo = ({ personal, setPersonal, errors, setErrors }) => {
 
   const liveEmailValidation = () => {
     if (personal.email && !personal.email.includes("@mitrahsoft.com")) {
-      setErrors({ ...errors, email: "Email must include '@mitrahsoft.com'." });
+      setErrors({ ...errors, email: "Email must include '@.com'." });
     } else {
       setErrors({ ...errors, email: null });
     }
